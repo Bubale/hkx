@@ -9,6 +9,7 @@ import {ShowListPage} from '../pages/show-list/show-list';
 import {ShowDetailPage} from '../pages/show-detail/show-detail';
 import {FavoriteListPage} from '../pages/favorite-list/favorite-list';
 import {LoginPage} from '../pages/login/login';
+import {LogoPage} from '../pages/logo/logo';
 import {AboutPage} from '../pages/about/about';
 
 import {ShowService} from "../providers/show-service-rest";
@@ -25,7 +26,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ShowListPage,
     ShowDetailPage,
     FavoriteListPage,
-    LoginPage
+    LoginPage,
+    LogoPage
   ],
   imports: [
     BrowserModule,
@@ -40,7 +42,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ShowListPage,
     ShowDetailPage,
     FavoriteListPage,
-    LoginPage
+    LoginPage,
+    LogoPage
   ],
   providers: [
     StatusBar,

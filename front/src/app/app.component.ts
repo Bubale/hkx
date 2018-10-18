@@ -8,6 +8,7 @@ import {FavoriteListPage} from '../pages/favorite-list/favorite-list';
 import {WelcomePage} from '../pages/welcome/welcome';
 import {AboutPage} from '../pages/about/about';
 import {LoginPage} from '../pages/login/login';
+import {LogoPage} from '../pages/logo/logo';
 
 export interface MenuItem {
     title: string;
@@ -21,7 +22,7 @@ export interface MenuItem {
 export class MyApp {
     @ViewChild(Nav) nav: Nav;
 
-    rootPage: any = LoginPage;
+    rootPage: any = LogoPage;
     pages: any;
 
     constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
