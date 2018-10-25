@@ -15,15 +15,8 @@
 
         <ion-item-sliding *ngFor="let show of shows">
             <button ion-item (click)="openShowDetail(show)">
-                <ion-thumbnail item-left>
-                    <img src="{{serverUrl}}{{show.image.url}}"/>
-                </ion-thumbnail>
-                <h2>{{show.name}}</h2>
-                <p>{{ show.date | date: 'd MMMM yyyy' }}</p>
+                <h2>{{show.firstName}} {{show.lastName}}</h2>
             </button>
-            <ion-item-options>
-                <button danger (click)="deleteItem(show)">Delete</button>
-            </ion-item-options>
         </ion-item-sliding>
 
     </ion-list>
