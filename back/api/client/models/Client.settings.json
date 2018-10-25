@@ -9,13 +9,6 @@
     "timestamps": true
   },
   "attributes": {
-    "username": {
-      "default": "",
-      "unique": true,
-      "minLength": 3,
-      "type": "string",
-      "required": true
-    },
     "email": {
       "default": "",
       "minLength": 3,
@@ -65,9 +58,15 @@
       "type": "string",
       "required": true
     },
-    "questions": {
-      "collection": "question",
-      "via": "username"
+    "username": {
+      "default": "",
+      "unique": true,
+      "minLength": 3,
+      "type": "string",
+      "required": true
+    },
+    "question": {
+      "model": "question"
     }
   }
 }

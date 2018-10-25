@@ -9,29 +9,14 @@
 
 <ion-content no-bounce>
     <ion-slides>
-        <ion-slide style="background-image: url('assets/img/user.png');">
-            <p>Who is it?<br />
-                <button ion-button (click)="openShowList()">
-                    Start
-                </button>
-            </p>
-        </ion-slide>
-
-        <ion-slide style="background-image: url('assets/img/user.png')">
-            <p>Yeah it must be... Hmm wait!<br />
-                <button ion-button (click)="openShowList()">
-                    Start
-                </button>
-            </p>
-        </ion-slide>
-
-        <ion-slide style="background-image: url('assets/img/user.png')">
-            <p>
-                Maybe... Nope I don't know sorry.<br />
-                <button ion-button (click)="openShowList()">
-                    Start
-                </button>
-            </p>
+        <ion-slide *ngFor="let client of clients">
+            <ion-slide style="background-image: url('assets/img/user.png');">
+                <p>Who is it?<br />
+                    <button ion-button (click)="openShowList()">
+                        {{client.firstName}}
+                    </button>
+                </p>
+            </ion-slide>
         </ion-slide>
     </ion-slides>
 
