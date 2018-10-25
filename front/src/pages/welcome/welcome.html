@@ -9,11 +9,13 @@
 
 <ion-content no-bounce>
     <ion-slides>
-        <ion-slide *ngFor="let client of clients">
-            <ion-slide style="background-image: url('assets/img/user.png');">
+        <ion-slide *ngFor="let show of shows">
+            <ion-slide>
+                <img src='assets/img/user.png'>
+                <br>
                 <p>Who is it?<br />
                     <button ion-button (click)="openShowList()">
-                        {{client.firstName}}
+                        {{show.firstName}}
                     </button>
                 </p>
             </ion-slide>
