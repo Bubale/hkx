@@ -1,6 +1,6 @@
 <ion-header>
     <ion-navbar>
-        <ion-title>Show</ion-title>
+        <ion-title>User to meet</ion-title>
     </ion-navbar>
 </ion-header>
 
@@ -16,5 +16,17 @@
         <ion-card-content>
                 <h2 class="card-title">Age: {{show.age}}</h2>
         </ion-card-content>
+        <ion-card-content>
+                <h2 class="card-title">About me: {{show.briefDescription}}</h2>
+        </ion-card-content>
+        <ion-card-content>
+                <h2 class="card-title">School: {{show.school}}</h2>
+        </ion-card-content>
+        <ion-card-content>
+                <h2 class="card-title">Promotion: {{show.promotion}}</h2>
+        </ion-card-content>
     </ion-card>
+    <button ion-button (click)="logo()">
+            Confirm meeting
+    </button>
 </ion-content>
