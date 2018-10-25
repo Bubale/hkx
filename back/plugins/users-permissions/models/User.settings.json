@@ -39,44 +39,6 @@
       "via": "users",
       "plugin": "users-permissions",
       "configurable": false
-    },
-    "firstName": {
-      "default": "firstName",
-      "maxLength": 100,
-      "type": "string",
-      "required": true
-    },
-    "lastName": {
-      "default": "lastName",
-      "maxLength": 100,
-      "type": "string",
-      "required": true
-    },
-    "age": {
-      "default": "",
-      "type": "integer",
-      "required": true
-    },
-    "briefDescription": {
-      "default": "Enter a brief description of your self",
-      "maxLength": 500,
-      "type": "string"
-    },
-    "school": {
-      "default": "school",
-      "maxLength": 100,
-      "type": "string",
-      "required": true
-    },
-    "promotion": {
-      "default": "promotion",
-      "maxLength": 100,
-      "type": "string",
-      "required": true
-    },
-    "questions": {
-      "collection": "question",
-      "via": "user"
     }
   },
   "collectionName": "users-permissions_user"

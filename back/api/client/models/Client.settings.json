@@ -1,0 +1,72 @@
+{
+  "connection": "default",
+  "collectionName": "client",
+  "info": {
+    "name": "client",
+    "description": "New user model, which is possibly modifiable"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "email": {
+      "default": "",
+      "minLength": 3,
+      "type": "email",
+      "required": true
+    },
+    "password": {
+      "default": "",
+      "minLength": 6,
+      "type": "password",
+      "required": true
+    },
+    "firstName": {
+      "default": "",
+      "minLength": 3,
+      "type": "string",
+      "required": true
+    },
+    "lastName": {
+      "default": "",
+      "minLength": 3,
+      "type": "string",
+      "required": true
+    },
+    "age": {
+      "default": "",
+      "min": 13,
+      "type": "integer",
+      "required": true
+    },
+    "school": {
+      "default": "",
+      "minLength": 3,
+      "type": "string",
+      "required": true
+    },
+    "promotion": {
+      "default": "",
+      "minLength": 3,
+      "type": "string",
+      "required": true
+    },
+    "briefDescription": {
+      "default": "",
+      "maxLength": 600,
+      "minLength": 50,
+      "type": "string",
+      "required": true
+    },
+    "username": {
+      "default": "",
+      "unique": true,
+      "minLength": 3,
+      "type": "string",
+      "required": true
+    },
+    "question": {
+      "model": "question"
+    }
+  }
+}

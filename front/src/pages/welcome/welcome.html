@@ -3,27 +3,20 @@
         <button ion-button menuToggle>
             <ion-icon name="menu"></ion-icon>
         </button>
-        <ion-title>Welcome</ion-title>
+        <ion-title>Mates to discover</ion-title>
     </ion-navbar>
 </ion-header>
 
 <ion-content no-bounce>
     <ion-slides>
-        <ion-slide style="background-image: url('assets/img/slide_1.jpg');">
-            <p>ShowTonight is the best app!</p>
-        </ion-slide>
-
-        <ion-slide style="background-image: url('assets/img/slide_2.jpg')">
-            <p>Discover the best shows</p>
-        </ion-slide>
-
-        <ion-slide style="background-image: url('assets/img/slide_3.jpg')">
-            <p>
-                Learn how to code with HackX! <br />
-                <button ion-button (click)="openShowList()">
-                    Start
-                </button>
-            </p>
+        <ion-slide *ngFor="let client of clients">
+            <ion-slide style="background-image: url('assets/img/user.png');">
+                <p>Who is it?<br />
+                    <button ion-button (click)="openShowList()">
+                        {{client.firstName}}
+                    </button>
+                </p>
+            </ion-slide>
         </ion-slide>
     </ion-slides>
 

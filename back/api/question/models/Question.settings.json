@@ -3,28 +3,41 @@
   "collectionName": "",
   "info": {
     "name": "question",
-    "description": "Custom questions to identify users and check the meeting of two persons"
+    "description": "3 question with 3 answers"
   },
   "options": {
     "timestamps": true
   },
   "attributes": {
-    "keyQuestion": {
-      "default": "Enter a secret question about yourself",
-      "maxLength": 100,
+    "keyInfo1": {
+      "default": "",
       "type": "string",
       "required": true
     },
-    "keyAnswer": {
-      "default": "Enter the corresponding answer",
-      "maxLength": 100,
+    "keyAnswer1": {
+      "default": "",
       "type": "string",
       "required": true
     },
-    "user": {
-      "model": "user",
-      "via": "questions",
-      "plugin": "users-permissions"
+    "keyInfo2": {
+      "default": "",
+      "type": "string",
+      "required": true
+    },
+    "keyAnswer2": {
+      "default": "",
+      "type": "string",
+      "required": true
+    },
+    "keyInfo3": {
+      "default": "",
+      "type": "string",
+      "required": true
+    },
+    "keyAnswer3": {
+      "default": "",
+      "type": "string",
+      "required": true
     }
   }
 }
