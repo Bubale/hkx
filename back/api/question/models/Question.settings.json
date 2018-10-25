@@ -1,0 +1,30 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "question",
+    "description": "Custom questions to identify users and check the meeting of two persons"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "keyQuestion": {
+      "default": "Enter a secret question about yourself",
+      "maxLength": 100,
+      "type": "string",
+      "required": true
+    },
+    "keyAnswer": {
+      "default": "Enter the corresponding answer",
+      "maxLength": 100,
+      "type": "string",
+      "required": true
+    },
+    "user": {
+      "model": "user",
+      "via": "questions",
+      "plugin": "users-permissions"
+    }
+  }
+}
