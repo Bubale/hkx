@@ -1,6 +1,6 @@
 {
   "connection": "default",
-  "collectionName": "",
+  "collectionName": "question",
   "info": {
     "name": "question",
     "description": "Custom questions to identify users and check the meeting of two persons"
@@ -21,10 +21,9 @@
       "type": "string",
       "required": true
     },
-    "user": {
-      "model": "user",
-      "via": "questions",
-      "plugin": "users-permissions"
+    "username": {
+      "model": "client",
+      "via": "questions"
     }
   }
 }
