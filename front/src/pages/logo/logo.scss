@@ -3,14 +3,16 @@ page-logo {
 
   ion-title{
     text-align: center;
-    font-weight: 600;
   }
 
   button{
-    border: none;
-    text-align: center;
-    vertical-align: center;
-    padding: 230px 100%;  
+    background-image: url('../../assets/img/logo_bubale.jpeg');
+    background-repeat: no-repeat;
+    background-color: black;
+    background-attachment: fixed;
+    background-position: center center; 
+    height: 400px;
+    width: 100%;
   }
 
   p{
